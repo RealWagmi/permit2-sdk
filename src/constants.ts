@@ -2,7 +2,7 @@ import { ChainId } from '@real-wagmi/sdk';
 import { Address } from 'viem';
 
 // @fixme convert to ChainId after all chains are updated
-const PERMIT2_ADDRESSES: Record<ChainId, Address | undefined> = {
+const PERMIT2_ADDRESSES: Record<ChainId, Address> = {
     [ChainId.ETHEREUM]: '0x4b5d9db7910448e2F236509D9eE242673AFa28aA',
     [ChainId.BASE]: '0x16b413526d062142eb9eDA9d75312cA9f2e418FD',
     [ChainId.ZKSYNC]: '0x87C0878B54c174199f438470FD74B3F7e1Def295',
@@ -12,12 +12,10 @@ const PERMIT2_ADDRESSES: Record<ChainId, Address | undefined> = {
     [ChainId.OPTIMISM]: '0x127d30002C2aeDc64A5e0C4Ee2043105F58107a9',
     [ChainId.METIS]: '0xb1F795776cB9DdAC6E7e162f31C7419Dd3d48297',
     [ChainId.METIS_SEPOLIA]: '0x1Ac569879EF7EacB17CC373EF801cDcE4acCdeD5',
-    [ChainId.ZKLINK]: '0x8C685427ac9bB5D7915A2EC165F3aD9B1404D1A9',
     [ChainId.IOTA]: '0x8d8B490fCe6Ca1A31752E7cFAFa954Bf30eB7EE2',
     [ChainId.AVALANCHE]: '0x037F7b8de425Afc8A544920Bfb0786c1Fd74E473',
     [ChainId.POLYGON]: '0x5c811Ce03C3C56790C1cF2f3068713b80AB59495',
     [ChainId.BSC]: '0x678F6b93FB0670Be8a6610795cA4896Dc217a650',
-    [ChainId.BLAST]: undefined,
     [ChainId.SONIC_TESTNET]: '0x1Ac569879EF7EacB17CC373EF801cDcE4acCdeD5',
 };
 
